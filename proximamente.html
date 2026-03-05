@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familias que Inspiran - Próximamente</title>
+    <!-- Importamos fuentes similares a las de tu imagen (Nunito para los títulos redondos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 1. Definición de colores basados en tu imagen */
+        :root {
+            --bg-color: #464040; /* El gris/café oscuro de tu fondo */
+            --brand-yellow: #f5b726; /* El amarillo mostaza de tu logo */
+            --text-white: #f0f0f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Contenedor principal */
+        .coming-soon-container {
+            max-width: 800px;
+            width: 100%;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        /* Estilo del Logo (Placeholder similar al tuyo) */
+        .logo-placeholder svg {
+            width: 120px;
+            height: 120px;
+            fill: none;
+            stroke: var(--brand-yellow);
+            stroke-width: 2;
+            margin-bottom: 20px;
+        }
+
+        /* Título Principal (Estilo 'Familias que Inspiran') */
+        h1 {
+            font-family: 'Nunito', sans-serif; /* Fuente redondeada */
+            font-size: 3.5rem;
+            color: var(--brand-yellow); /* Color amarillo */
+            line-height: 1.1;
+            margin-bottom: 10px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        /* Subtítulo grande */
+        h2 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.9;
+        }
+
+        /* Texto descriptivo (tomado de tu imagen) */
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            color: #dcdcdc;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Línea decorativa */
+        .divider {
+            height: 4px;
+            width: 80px;
+            background-color: var(--brand-yellow);
+            margin: 0 auto 30px auto;
+            border-radius: 2px;
+        }
+
+        /* Botón de acción */
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            border: 2px solid var(--brand-yellow);
+            color: var(--brand-yellow);
+            text-decoration: none;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background-color: var(--brand-yellow);
+            color: var(--bg-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(245, 183, 38, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 60px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsividad para móviles */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.5rem; }
+            .logo-placeholder svg { width: 90px; height: 90px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="coming-soon-container">
+        <!-- Ícono decorativo (Corazón simplificado para simular tu logo) -->
+        <div>
+            <img src="/images/imagotipo.png">
+        </div>
+
+        <h1>Familias que<br>Inspiran</h1>
+        <div class="divider"></div>
+        
+        <h2>Próximamente Disponible</h2>
+
+        <p>
+            "¡Tú puedes ser el cambio que tu familia necesita! <br>
+            Estamos renovando nuestra plataforma para construir un futuro más amoroso y seguro."
+        </p>
+
+        <a href="index.html" class="btn">Volver al Inicio</a>
+
+        <footer>
+            &copy; Copyright|familias que inspiran TODOS LOS DERECHOS RESERVADOS.
+        </footer>
+    </div>
+
+</body>
+</html>
